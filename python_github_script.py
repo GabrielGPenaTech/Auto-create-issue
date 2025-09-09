@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Script para criar backlog completo do App Avançar Frota Corretiva
-Projeto: https://github.com/orgs/FARIT-digital/projects/1
+Script para criar backlog completo
 
 Requisitos:
 - pip install requests python-dotenv
 - Criar arquivo .env com GITHUB_TOKEN=seu_token_aqui
 - Ou definir variáveis de ambiente
 
-Autor: Assistente IA
+Autor: Gabriel Pena
 Data: 09/09/2025
 """
 
@@ -118,24 +117,27 @@ class GitHubBacklogCreator:
         """Retorna lista completa de todas as tasks"""
         return [
             # ARQUITETURA E CONFIGURAÇÃO INICIAL ( Exemplo de task )
+            # CRIE QUANTAS FOR NECESSÁRIO COM BASE NO EXEMPLO A SEGUIR:
             {
                 "title": "TASK-001: Configuração da Estrutura do Projeto",
-                "body": """**📋 Descrição**: Configurar a estrutura inicial do projeto com separação de responsabilidades
-
-                ## 🎯 Objetivos
-                - [ ] Configurar repositório Git com estrutura monorepo ou separada
-                - [ ] Definir arquitetura de pastas (frontend mobile, backend API)
-                - [ ] Configurar ambientes (development, homologação, produção)
-                - [ ] Documentar padrões de código e convenções de nomenclatura
-                - [ ] Configurar ESLint/Prettier para padronização
-                - [ ] Criar README.md inicial com instruções de setup
-
-                ## 📊 Critérios de Aceitação
-                - Estrutura de pastas bem definida e documentada
-                - Ambientes configurados e funcionais
-                - Documentação clara para novos desenvolvedores
-
-                **🏷️ Tipo**: Setup | **⭐ Prioridade**: Alta | **⏱️ Estimativa**: 2-3 dias""",
+                "body": """
+                    **📋 Descrição**: Configurar a estrutura inicial do projeto com separação de responsabilidades
+    
+                    ## 🎯 Objetivos
+                    - [ ] Configurar repositório Git com estrutura monorepo ou separada
+                    - [ ] Definir arquitetura de pastas (frontend mobile, backend API)
+                    - [ ] Configurar ambientes (development, homologação, produção)
+                    - [ ] Documentar padrões de código e convenções de nomenclatura
+                    - [ ] Configurar ESLint/Prettier para padronização
+                    - [ ] Criar README.md inicial com instruções de setup
+    
+                    ## 📊 Critérios de Aceitação
+                    - Estrutura de pastas bem definida e documentada
+                    - Ambientes configurados e funcionais
+                    - Documentação clara para novos desenvolvedores
+    
+                    **🏷️ Tipo**: Setup | **⭐ Prioridade**: Alta | **⏱️ Estimativa**: 2-3 dias
+                """,
                 "labels": ["setup", "high-priority", "architecture"]
             },
         ]
@@ -147,7 +149,7 @@ def main():
     
     # Configurações - Altere aqui seus dados
     GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-    REPO_OWNER = os.getenv('REPO_OWNER', 'FARIT-digital')  # Padrão: FARIT-digital
+    REPO_OWNER = os.getenv('REPO_OWNER', 'SEU_PROJETO')
     REPO_NAME = os.getenv('REPO_NAME')  # Você deve definir o nome do repositório
     
     # Validações
