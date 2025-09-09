@@ -8,14 +8,14 @@
 pip install requests python-dotenv
 ```
 
-### 2️⃣ Criar arquivo .env
+### 2️⃣ Criar arquivo config.env
 
 ```bash
-# Crie o arquivo .env na mesma pasta do script
-touch .env
+# Crie o arquivo config.env na mesma pasta do script
+touch config.env
 ```
 
-Adicione no arquivo `.env`:
+Adicione no arquivo `.config.env`:
 
 ```env
 GITHUB_TOKEN=seu_token_github_aqui
@@ -56,7 +56,7 @@ python create_afc_backlog.py
 
 ### ✅ Configuração flexível
 - Via variáveis de ambiente
-- Via arquivo .env
+- Via arquivo config.env
 - Fácil personalização
 
 ## 📋 Estrutura das Issues Criadas
