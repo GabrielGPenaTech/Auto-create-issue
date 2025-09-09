@@ -33,7 +33,7 @@ REPO_NAME=nome-do-repositorio-onde-criar-as-issues
 ### 4️⃣ Executar o script
 
 ```bash
-python create_afc_backlog.py
+python python_github_script.py
 ```
 
 ## 🎯 Principais Recursos do Script
